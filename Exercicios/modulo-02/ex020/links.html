@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+        # - id
+        . - classes
+        : - pseudo-codigo
+        :: - pseudo-elememto
+        > - clidren (Filho de uma TAG)
+        */
+        
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(4, 177, 177);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: bisque;
+        }
+
+        .especial::before{
+            content: '-> ';
+        }
+
+        .especial::after{
+            content: ' <-';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="#" target="_blank">Repositório Git Hub</a></li>
+        <li><a href="#" target="_blank" class="especial">Canal Youtube</a></li>
+        <li><a href="#" target="_blank" class="especial">Site curso em vídeo</a></li>
+        <li><a href="#" target="_blank">Link de teste</a></li>
+    </ul>
+</body>
+</html>
