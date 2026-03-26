@@ -1,4 +1,4 @@
-body{background-image: url(imagens/wallpaper002.jpg);}
+body{background-image: url(../imagens/wallpaper002.jpg);}
 
 div.quadrado{
     border: 2px solid black;
@@ -18,5 +18,5 @@ div#q2{
 }
 
 div#q3{
-    background-image: url(imagens/pattern001.png);
+    background-image: url(../imagens/pattern001.png);
 }
