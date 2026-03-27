@@ -1,13 +1,42 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: 'CordelEncarnado-Bold';
+    src: url('../fontes/CordelEncarnado-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'CordelEncarnado-Italic';
+    src: url('../fontes/CordelEncarnado-Italic.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'CordelEncarnado-Regular';
+    src: url('../fontes/CordelEncarnado-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'CordelEncarnadoNormal-Regular';
+    src: url('../fontes/CordelEncarnadoNormal-Regular.ttf') format('truetype'); 
+}
+
+:root{
+    --fonte1: 'CordelEncarnado-Bold';
+    --fonte2: 'CordelEncarnado-Italic';
+    --fonte3: 'CordelEncarnado-Regular';
+    --fonte4: 'CordelEncarnadoNormal-Regular';
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100vh;
     background-color: rgba(235, 222, 204, 0.575);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
@@ -19,6 +48,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte1);  
+    font-size: 5vw;     
 }
 
 header > p{
@@ -38,8 +69,10 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 1.5em;
+    line-height: 2em;
     padding-left: 20px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 .normal{
@@ -53,8 +86,9 @@ section{
 }
 
 .imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(65, 65, 65, 0.76);
-    width: 400px;
 }
 
 
