@@ -1,0 +1,22 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table{
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center; /*Alinhamento horizontal*/
+    vertical-align: middle;/*Alinhamento vestical*/
+}
+
+.num{
+    text-align: left;
+}
+
