@@ -13,6 +13,40 @@ Extra extra Grande: >= 1400px
 */
 
 @media print { /*IMPRESSÃO*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url('../imagens/back-print.jpg');/*desnecessário*/
+    }
+
+    main{
+        width: 100vw;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi desenvolvida no curso Html e Css3 do CursoemVideos';
+        text-decoration: overline;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    h1#phone{display: none;}
+    h1#tablet{display: none;}
+    h1#print{display: block;}
+    h1#desktop{display: none;}
+    h1#tv{display: none;}
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#desktop{display: none;}
+    img#tv{display: none;}
     
 }
 
