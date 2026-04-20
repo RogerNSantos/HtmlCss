@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+------------------------------
+        TELAS
+Extra pequenas: até < 576px
+Pequena tela: >= 576px
+Médio: 576 até >= 768px
+Grande: 768 até >= 992px
+Extra Grande: 992 até >= 1200px
+Extra extra Grande: >= 1400px
+*/
+
+@media screen and (min-width: 768px){
+    i#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;        
+    }
+
+    main{
+        width: 600px;
+        height: 600px;
+    }
+}
