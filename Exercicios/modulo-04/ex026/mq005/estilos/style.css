@@ -33,6 +33,10 @@ i#burguer:hover{
     color: black;
 }
 
+menu{
+    display: none;
+}
+
 menu > ul{
     list-style-type: none; /*remove o estilo das marcações*/
 }
