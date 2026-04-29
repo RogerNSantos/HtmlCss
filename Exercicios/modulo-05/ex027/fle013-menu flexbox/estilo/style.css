@@ -1,0 +1,37 @@
+@charset "UTF8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: rgba(222, 184, 135, 0.342);
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: rgba(222, 184, 135, 0.774);
+    color: white;
+    padding: 10px;
+}
+
+header > h1{
+    border: 2px ridge black;
+}
+
+header > nav{
+    border: 2px ridge black;
+}
+
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.342);
+}
