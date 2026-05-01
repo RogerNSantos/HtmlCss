@@ -8,20 +8,19 @@
     <style>
         div.container {
             border: 3px solid black;
-            height: 350px;
+            height: 250px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: 100px 100px 100px;
-
-            /*Primeiro rows depois columns
-            grid-template: 80px 80px 80px / auto auto auto;*/
-            gap: 1px;
-            align-items: stretch;
-            justify-items: center;
-            /*place-items: stretch center;*/            
-            align-content: start;
-            justify-content: end;            
-            /*place-content: start end;*/           
+            /*grid-template-columns: auto auto auto;  
+            grid-template-rows: auto auto auto;
+            PRIMEIRO O ROWS*/
+            grid-template: repeat(3, auto) / repeat(3, auto);
+            gap:  10px;
+            /*align-items: start;
+            justify-items: center;*/
+            place-items: start center;
+            /*align-content: space-between;
+            justify-content: end;*/
+            place-content: space-between end;      
         }
 
         div.item {
